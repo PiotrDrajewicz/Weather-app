@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="loading">
+        <h2>Loading data - allow your location</h2>
+        <i class="fa-solid fa-sun fa-spin"></i>
+    </div>
+
+    <section class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <div class="desc-section">
+            <img class="icon">
+            <div class="temperature-description">It's cold</div>
+        </div>
+    </section>
+
+    <section class="weather-data">
+        <div class="degree-section">
+            <h2 class="temperature-title">Temperature</h2>
+            <hr class="line-section">
+            <div class="temps-switch-div">
+                <div class="temp-val">
+                    <h3 class="temperature-degree">34</h3>
+                    <span>K</span>
+                </div>
+                <div class="temp-val-C">
+                    <h3 class="temperature-degree-C">34</h3>
+                    <span>C</span>
+                </div>
+            </div>
+        </div>
+        <div class="pressure-section">
+            <h2 class="pressure-title">Pressure</h2>
+            <hr class="line-section">
+            <div class="press-val">
+                <h3 class="pressure-value">1021</h3>
+                <span>hPa</span>
+            </div>
+        </div>
+        <div class="wind-section">
+            <h2 class="wind-title">Wind</h2>
+            <hr class="line-section">
+            <i class="fa-solid fa-arrow-up"></i>
+            <div class="wind-val-1">
+                <h3 class="wind-direction">40</h3>
+                <span><sup>o</sup></span>
+            </div>
+            <div class="wind-val-2">
+                <h3 class="wind-value">3.6</h3>
+                <span>m/s</span>
+            </div>
+
+        </div>
+    </section>
+    <div>
+        <i class="fa-solid fa-arrow-right-from-arc"></i>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
